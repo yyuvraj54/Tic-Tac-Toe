@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/box.xml" value="0.1625" />
+        <entry key="app/src/main/res/drawable/buttons.xml" value="0.1625" />
+        <entry key="app/src/main/res/drawable/roundshape.xml" value="0.30648148148148147" />
+        <entry key="app/src/main/res/font/.xml" value="0.30648148148148147" />
+        <entry key="app/src/main/res/font/alfa_slab_one.xml" value="0.30648148148148147" />
+        <entry key="app/src/main/res/layout/activity_game_page.xml" value="0.25265457829818344" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
