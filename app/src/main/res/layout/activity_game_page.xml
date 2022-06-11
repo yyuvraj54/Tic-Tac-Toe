@@ -25,7 +25,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -91,8 +91,9 @@
         android:id="@+id/turn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="15dp"
         android:background="#F06292"
+        android:padding="10dp"
         android:fontFamily="@font/alfa_slab_one"
         android:gravity="center"
         android:text="Turn : player number" />
@@ -273,24 +274,29 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/play_again"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:visibility="invisible"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/buttons"
-                android:text="Play again" />
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/restart_game"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/buttons"
                 android:text="Reset Game" />
+
+            <Button
+                android:id="@+id/play_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/buttons"
+                android:text="Play again"
+                android:visibility="visible"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
 
         </LinearLayout>
     </LinearLayout>

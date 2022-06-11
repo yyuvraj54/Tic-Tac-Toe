@@ -136,7 +136,6 @@ public class GamePage extends AppCompatActivity {
                 eight_.setText("");
                 nine_.setText("");
                 error_.setText("");
-                playAgain_.setVisibility(View.INVISIBLE);
                 turn_.setTextColor(Color.parseColor("#FFA500"));
 
                 player_one_score=0;
@@ -167,7 +166,6 @@ public class GamePage extends AppCompatActivity {
                 eight_.setText("");
                 nine_.setText("");
                 error_.setText("");
-                playAgain_.setVisibility(View.INVISIBLE);
                 turn_.setTextColor(Color.parseColor("#FFA500"));
 
             }
@@ -250,6 +248,11 @@ public class GamePage extends AppCompatActivity {
 
             if (val) {
                 if (winstatus==false){box_.setText("X");xstate[index] = 1;}
+                winstate=checkwin(turn_);if (winstate==1 && (winstatus==false)){player_one_score++;
+                    player_one_.setText(Integer.toString(player_one_score));
+                    winstatus=true;} else if (winstate==0 && (winstatus==false)){player_two_score++;
+                    player_two_.setText(Integer.toString(player_two_score));
+                    winstatus=true;}
                 draw = isDraw();
                 if (!draw) {
                 error.setText("");
@@ -286,12 +289,15 @@ public class GamePage extends AppCompatActivity {
 
 
                 if (val) {
+
                     if (winstatus==false){box_.setText("0"); zstate[index] = 1;}
+                    winstate=checkwin(turn_);if (winstate==1 && (winstatus==false)){player_one_score++;
+                        player_one_.setText(Integer.toString(player_one_score));
+                        winstatus=true;} else if (winstate==0 && (winstatus==false)){player_two_score++;
+                        player_two_.setText(Integer.toString(player_two_score));
+                        winstatus=true;}
                     draw = isDraw();
                     if (!draw) {
-
-
-
                     turn_.setText("Turn: Player 1 [X]");
                     error.setText("");
                     winstate = checkwin(turn_);
